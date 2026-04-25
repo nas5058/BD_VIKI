@@ -10,6 +10,49 @@
 <meta property="og:url" content="https://nas5058.github.io/BD_VIKI/">
 <meta property="og:type" content="website">
   <style>
+
+    /* 🌴 Блок с форматом мероприятия */
+  .dress-code-block {
+    background: linear-gradient(135deg, rgba(212,175,55,0.12) 0%, rgba(20,20,20,0.95) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 12px;
+    padding: 20px 18px;
+    margin: 24px 0 28px 0;
+    text-align: center;
+  }
+  
+  .dress-code-block h4 {
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  
+  .dress-code-block p {
+    color: var(--text);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+  
+  .dress-code-block strong {
+    color: var(--gold);
+    font-weight: 600;
+  }
+  /* Для телефонов */
+  @media (max-width: 480px) {
+    .dress-code-block {
+      padding: 16px 14px;
+      margin: 20px 0 24px 0;
+    }
+    .dress-code-block h4 {
+      font-size: 1.2rem;
+    }
+    .dress-code-block p {
+      font-size: 0.9rem;
+    }
+  }
     .beach-reminder {
     background: linear-gradient(135deg, rgba(212,175,55,0.1) 0%, rgba(20,20,20,0.9) 100%);
     border: 2px solid var(--gold);
@@ -254,6 +297,16 @@
     Пожалуйста, заполните анкетку ниже, которая позволит нам сделать этот день еще лучше ❤️
     </div>
 
+        <!-- 🌴 ФОРМАТ МЕРОПРИЯТИЯ (НОВЫЙ БЛОК) -->
+    <div class="dress-code-block">
+      <h4>🌊 Формат вечера</h4>
+      <p>Вечеринка у бассейна | Casual Style<br>
+      Поэтому забудьте про красивые платья и каблуки!<br><br>
+      👗 <strong>Одежда:</strong> удобная, стильная, та, в которой вам комфортно.<br>
+      👙 <strong>Бассейн:</strong> обязательно возьмите купальник/плавки — будем плавать!<br>!<br>
+      <span class="joke-hint">Главное — вы, ваши улыбки и хорошее настроение! ✨</span></p>
+    </div>
+
 
     <!-- 📋 Форма RSVP -->
     <form id="rsvp-form" action="https://formspree.io/f/mlgawdon" method="POST">
@@ -278,13 +331,17 @@
 
       <div class="form-group">
 
-      <label>Важное про подарки</label>
-      <div style="text-align:center; margin:0; padding:12px; background:var(--surface); border-radius:8px; border-left:3px solid var(--gold); font-size:0.95rem; color:var(--text-muted);">
-        Цветы дарить не нужно — поставить их дома действительно некуда.<br>
-        Если хотите что-то подарить, то пусть это будет конверт. Я их сохраню и потом куплю то, что будет напоминать о вас.<br>
-        <br>
-        А самый главный подарок для меня — это вы, приехавшие и улыбающиеся. Жду. Очень. Спасибо! 🤍<br>
+
+        <div class="form-group">
+        <label>Важное про подарки</label>
+        <div style="text-align:center; margin:0; padding:14px; background:var(--surface); border-radius:8px; border-left:3px solid var(--gold); font-size:0.95rem; color:var(--text-muted); line-height:1.6;">
+          ✨ Друзья, мой главный подарок — это вы! <br>
+          Но если очень хочется сделать приятно — <strong>конверт будет лучшим решением</strong> 💸<br>
+          <span class="joke-hint">Обещаю потратить с умом… или не очень 😏</span><br>
+          Спасибо, что вы у меня есть! 🤍
+        </div>
       </div>
+
 
       <div class="form-group">
         <label>🍸 Алкогольные предпочтения</label>
